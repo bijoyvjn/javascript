@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    button{
+        height: 80px;
+        width: 80px;
+    }
+    input{
+        height: 80px;
+    }
+</style>
+
+
+<body style="background-color: rgb(246, 252, 166);">
+    <div class="container-fluid" >
+        <div class="row mt-5">
+            <div class="col"></div>
+            <div class="col border border-dark rounded-3 p-3">
+                <h1 class="text-center">Calculator</h1>
+
+                <div class="row mt-5">
+                    <div class="col-6">
+                        <input id="inpt" type="text" class="form-control" style="border-color: black;
+                         background-color:rgb(246, 252, 166);">
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-danger" onclick="las_cle()"><</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-danger" onclick="clearing()">C</button>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('1')">1</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('2')">2</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('3')">3</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('+')">+</button>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('4')">4</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('5')">5</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('6')">6</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('-')">-</button>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('7')">7</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('8')">8</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('9')">9</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('*')">*</button>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('/')">/</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('0')">0</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="display_value('.')">.</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-dark btn-lg" onclick="evaluateExpression()">=</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+</body>
+</html>
